@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>vanilla clicker</title>
+  </head>
+  <body>
+    <button onclick='add()'>Click me</button>
+    <p># of clicks: <span id='span'>0</span></p>
+
+    <script>
+      const span = document.getElementById('span')
+      let count = 0
+      const add = () => {
+        count++
+        span.innerHTML = count
+      }
+    </script>
+  </body>
+</html>
